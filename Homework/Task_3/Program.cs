@@ -31,12 +31,12 @@ int [,] FillMatrix (int mm, int nn){
 
 void SrArif (int [,] arr){
     int sum = 0;
-    for (int i=0;i<arr.GetLength(0);i++){
-        for (int j=0;j<arr.GetLength(1);j++){
+    for (int i=0;i<arr.GetLength(1);i++){
+        for (int j=0;j<arr.GetLength(0);j++){
             sum=sum+arr[j,i];
         }
-        double sum1;        
-        System.Console.Write(Math.Round(Convert.ToDouble(sum)/arr.GetLength(1),2)+"; ");
+        System.Console.WriteLine(sum);        
+        System.Console.Write(Math.Round(Convert.ToDouble(sum)/arr.GetLength(0),2)+"; ");
         sum=0;
         }
 }
